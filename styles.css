@@ -1,0 +1,118 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 161, 130);
+}
+
+nav a {
+    background-color: coral;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.link-button {
+    padding: 8px;
+    background-color: coral;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.link-button:hover {
+    background-color: rgb(250, 148, 110);
+}
+
+main {
+    background-color: white;
+    max-width: 1100px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#profil {
+    width: 30%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid white;
+    outline: 4px solid rgb(250, 148, 110);
+    object-fit: cover;
+    object-position: center 35%;
+}
+
+#detail {
+    width: 70%;
+    padding: 8px;
+    border-left: solid #cccccc6a;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px
+}
+
+.container div {
+    max-width: 200px;
+    padding: 8px;
+    box-shadow: 0 2px 10px coral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+h3 {
+    background-color: rgb(248, 161, 130);
+    padding: 8px;
+}
+
+footer {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+@media screen and (max-width: 760px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #profil {
+        width: 100%;
+    }
+
+    #detail {
+        width: 100%;
+        border-left: none;
+        border-top: solid#cccccc6a;
+    }
+}
